@@ -53,6 +53,21 @@ For device functionality (kernels), install [Vulkan](https://www.vulkan.org) for
 
 See the [docs](https://docs.rs/krnl) or build them locally with `cargo doc --all-features`.
 
+### Install krnl
+`cargo add krnl`
+
+### Install krnlc
+
+With spirv-tools from the LunarG Vulkan SDK installed (will save significant compile time):
+
+`cargo +nightly install krnlc --locked --no-default-features \
+ --features use-installed-tools`
+
+Otherwise:
+
+`cargo +nightly-2023-05-27 install krnlc --locked`
+
+
 # Example
 
 ```rust
